@@ -1,6 +1,6 @@
 h1 {
   background-color: rgb(14, 142, 165);
-  color: antiquewhite;
+  color: rgb(247, 247, 247);
   text-align: center;
   border-radius: 5px;
   margin-left: 200px;
@@ -38,5 +38,10 @@ p{
     width: 100px;
     margin: 10px;
     text-align: center;
+    border: none;
     cursor: pointer;
+}
+.btnInput:hover{
+    transform: translateY(1px);
+    background-color: rgb(27, 154, 185);
 }
