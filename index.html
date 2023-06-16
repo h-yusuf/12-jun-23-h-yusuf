@@ -8,16 +8,72 @@
     <head>
       <h1>Temperature Conversion</h1>
     </head>
+    <!-- cuaca -->
+    <div class="cuaca">
+      <div class="card">
+        <div class="container">
+          <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+          </div>
+        </div>
+
+        <div class="card-header">
+          <span>Yogyakarta, Sleman<br />Gamping</span>
+          <span>june 12</span>
+        </div>
+        <span class="temp">23°</span>
+        <div class="temp-scale">
+          <span>Celcius</span>
+        </div>
+      </div>
+      <div class="card card2">
+        <div class="container">
+          <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+          </div>
+        </div>
+
+        <div class="card-header">
+          <span>Yogyakarta, Sleman<br />Gamping</span>
+          <span>june 12</span>
+        </div>
+
+        <span class="temp">23°</span>
+
+        <div class="temp-scale">
+          <span>Fahrenheit</span>
+        </div>
+      </div>
+    </div>
+    <!-- input  -->
     <div class="section">
       <section class="InputSection">
-        <p>Celcius </p>
-        <input type="number" id="InputField" />
+        <p>Celcius °C</p>
+        <input type="number" placeholder="Celcius" id="InputField" />
       </section>
       <div class="btn">
-        <button class="btnInput">Konversi</button>
-        <button class="btnInput">Reset</button>
+        <button class="btnInput" onclick="konversi()">Konversi</button>
+        <button class="btnInput" type="reset" onclick="clearFunction()">
+          Reset
+        </button>
         <button class="btnInput">Reverse</button>
       </div>
+      <textarea name="Fahrenheit" placeholder="Fahrenheit" id="hasil" disabled>Fahrenheit </textarea>
+      <!-- <input type="number" id="hasil" disabled /> -->
     </div>
   </body>
   <script src="script.js"></script>
